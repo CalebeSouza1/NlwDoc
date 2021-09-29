@@ -1,7 +1,6 @@
 import {Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm";
 import { v4 as uuid } from "uuid"   //v4 numeros aleatorios.
 
-
 @Entity("users")
 class User {
 

@@ -19,5 +19,7 @@
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.37",
     "uuid": "^8.3.2"
-  }
+  },
+  "repository": "https://github.com/CalebeSouza1/NlwDoc.git",
+  "author": "CalebeSouza1 <calebesouzadeoliveira0@gmail.com>"
 }
