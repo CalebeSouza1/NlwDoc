@@ -18,3 +18,16 @@ class CreateUserController {
 }
 
 export {CreateUserController};
+
+
+/*
+* server -> routes -> Controller -> Service (throw new Error)
+
+ 
+try{//tente fazer algo se não cnseguir, cai no chatch
+}catch(err) {
+    return response.status(400).jason({error: err.message});
+
+    o try catch fica massante e pode ser esquecido de colocar em algum lugar
+}
+*/
