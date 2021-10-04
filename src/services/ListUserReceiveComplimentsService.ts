@@ -12,7 +12,7 @@ class ListUserReceiveComplimentsService {
                 user_receiver: user_id 
             },
 
-            relations: ["userSender", "userReceiver", "tag"], // forma de trazer todas as informações do objeto
+            relations: ["userSender", "userReceiver", "tag"],
         });
 
         return compliments;

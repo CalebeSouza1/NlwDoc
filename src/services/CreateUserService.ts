@@ -15,15 +15,15 @@ class CreateUserService {
         const usersRepository = getCustomRepository(UsersRepositories);
 
         if(!email) {
-            throw new Error("Email incorrect"); //lançando uma excessao
+            throw new Error("Email incorrect"); 
         }
 
-        const userAlreadyExists = await usersRepository.findOne({ //Usuario já existe?
+        const userAlreadyExists = await usersRepository.findOne({ 
           email,
         });
 
         if (userAlreadyExists) {
-            throw new Error("User already exists"); // se existir lança uma excessao/erro
+            throw new Error("User already exists"); 
         }
 
         const passwordHash = await hash(password, 8)
@@ -33,7 +33,7 @@ class CreateUserService {
           email,
           admin,
           password: passwordHash,
-        }); // tudo certo, cria a instancia e salva o objeto no BD
+        }); 
 
         await usersRepository.save(user);
 

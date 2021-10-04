@@ -27,7 +27,7 @@ class Compliment {
     tag_id: string;
 
     @JoinColumn({name: "tag_id"})
-    @ManyToOne(() => Tag)                        //Muitos comentarios pra uma unica tag 
+    @ManyToOne(() => Tag)      
     tag: Tag;
 
     @Column()

@@ -32,7 +32,7 @@ export class CreateCompliments1633034194325 implements MigrationInterface {
                     default: "now()"
                 }
                 ],
-                foreignKeys: [     //utilizando dessa forma não precisa criar o nome da tabela, só passar os campos
+                foreignKeys: [
                     {
                         name: "FKUserSenderCompliments",
                         referencedTableName: "users",
@@ -61,20 +61,9 @@ export class CreateCompliments1633034194325 implements MigrationInterface {
             })
         )
 
-        // await queryRunner.createForeignKey(
-        //     "compliments",
-        //     new TableForeignKey({
-        //         name: "FKUserSenderCompliments",
-        //         referencedTableName: "users",
-        //         referencedColumnNames: ["id"],
-        //         columnNames: ["user_sender"],
-        //         onDelete: "SET NULL",
-        //         onUpdate: "SET NULL"
-        //     })
-        // )
     }
 
-    public async down(queryRunner: QueryRunner): Promise<void> { // caso queira remover
+    public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.dropTable("compliments");
     }
 

@@ -32,8 +32,8 @@ class Tag {
     }
 
     constructor() {
-        if(!this.id) { //senão tiver id
-            this.id = uuid(); //preenche com uuid
+        if(!this.id) { 
+            this.id = uuid(); 
         }
     }
 

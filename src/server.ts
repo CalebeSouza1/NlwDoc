@@ -7,7 +7,7 @@ import {router} from "./routes";
 import "./database";
 
 
-const app = express(); //conceito de middlewares, algo no meio entre a requisição e a resposta 
+const app = express();  
 
 app.use(express.json());
 

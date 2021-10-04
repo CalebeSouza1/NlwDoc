@@ -14,9 +14,6 @@ export async function ensureAdmin(
 
     const { admin } = await usersRepositories.findOne(user_id)
 
-    //Veriificar se usuário admin 
-
-
     if(admin){
         return next();
     }

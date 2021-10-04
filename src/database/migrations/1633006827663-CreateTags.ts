@@ -31,7 +31,7 @@ export class CreateTags1633006827663 implements MigrationInterface {
         )
     }
 
-    public async down(queryRunner: QueryRunner): Promise<void> { //se der algum erro
+    public async down(queryRunner: QueryRunner): Promise<void> { 
         await queryRunner.dropTable("tags");
     }
 
