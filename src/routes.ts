@@ -32,6 +32,6 @@ router.post("/compliments", ensureAuthenticated, createComplimentController.hand
 router.get("/users/compliments/send", ensureAuthenticated, listUserSendComplimentsController.handle )
 router.get("/users/compliments/receive", ensureAuthenticated, listUserReceiveComplimentsController.handle )
 
-router.get("/tags", ensureAuthenticated, listTagsController.handle ); // mesmo com mesmo nome, os tipos de metodos são diferentes post/get
+router.get("/tags", ensureAuthenticated, listTagsController.handle ); 
 router.get("/users", ensureAuthenticated, listUsersController.handle );
 export { router };
